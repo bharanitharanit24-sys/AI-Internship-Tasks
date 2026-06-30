@@ -1,37 +1,10 @@
-import java.util.Scanner;
+# Task 1 - Rule-Based Chatbot
 
-public class RuleBasedChatbot {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+## Objective
+Build a simple chatbot using Java with predefined responses.
 
-        System.out.println("===== Rule-Based Chatbot =====");
-        System.out.println("Type 'bye' to exit.");
+## Language
+Java
 
-        while (true) {
-            System.out.print("You: ");
-            String input = sc.nextLine().toLowerCase();
-
-            if (input.equals("hello") || input.equals("hi")) {
-                System.out.println("Bot: Hello! How can I help you?");
-            }
-            else if (input.equals("how are you")) {
-                System.out.println("Bot: I'm fine. Thank you! How are you?");
-            }
-            else if (input.equals("what is your name")) {
-                System.out.println("Bot: My name is RuleBot.");
-            }
-            else if (input.equals("who created you")) {
-                System.out.println("Bot: I was created using Java programming.");
-            }
-            else if (input.equals("bye")) {
-                System.out.println("Bot: Goodbye! Have a nice day.");
-                break;
-            }
-            else {
-                System.out.println("Bot: Sorry, I don't understand your question.");
-            }
-        }
-
-        sc.close();
-    }
-}
+## Description
+This project is a rule-based chatbot developed using Java. It responds to user inputs using if-else statements.
